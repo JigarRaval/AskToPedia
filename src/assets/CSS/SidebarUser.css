@@ -1,0 +1,40 @@
+.userFixed{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+.sidebar{
+   background-color: var(--accent);
+  color: var(--text-dark);
+  border-right: 2px solid var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+}
+.list{
+    list-style: none;
+    font-size: larger;
+    padding: 0;
+    margin: 0 ;
+    width: 100%;
+}
+.list li {
+    border-bottom: 2px solid var(--background-light);
+    text-align: center;
+    padding: 15px 0;
+
+}
+.list li:hover{
+    background-color: var(--primary-dark);
+    color: var(--background-light);
+    border-color: var(--primary-medium);
+}
+.bottom{
+    display: flex;
+    height: 100%;
+    background-color: var(--background-light);
+    color: var(--primary-dark);
+}
