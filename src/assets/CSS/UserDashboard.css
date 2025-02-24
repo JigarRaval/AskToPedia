@@ -1,6 +1,7 @@
-.userdashboard{
+.userdashboard {
     display: flex;
     align-items: center;
-margin: auto;
-
+    margin: auto;
+    background-color: var(--accent-color); /* Added background color */
+    color: var(--text-color); /* Added text color */
 }

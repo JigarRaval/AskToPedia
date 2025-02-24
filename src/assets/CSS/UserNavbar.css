@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-dark);
+  background-color: var(--primary-color); /* Updated to use the primary color variable */
   color: #ffffff;
   padding: 10px 20px;
-  border-bottom: 2px solid var(--primary-medium);
+  border-bottom: 2px solid var(--primary-color); /* Updated to use the primary color variable */
 }
 
 .navbar-brand a {
-  color: var(--background-light);
+  color: var(--background-color); /* Updated to use the background color variable */
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
@@ -21,7 +21,7 @@
 }
 
 .nav-link {
-  color: var(--background-light);
+  color: var(--background-color); /* Updated to use the background color variable */
   text-decoration: none;
   font-size: 1rem;
   padding: 5px 10px;
@@ -30,9 +30,9 @@
 }
 
 .nav-link:hover {
-  color: var(--accent);
-  
+  color: var(--accent-color); /* Updated to use the accent color variable */
 }
+
 .navbar .active {
-  color: var(--primary-medium);
+  color: var(--primary-color); /* Updated to use the primary color variable */
 }

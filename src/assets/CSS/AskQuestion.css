@@ -1,17 +1,18 @@
-.login-container form {
-  background-color: #fff; /* Keeping the white background */
+.question-form-container {
+  background-color: var(--background-color); /* Updated to use the background color variable */
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
-  position: absolute;
+  margin: auto;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
-.login-container h1 {
+h2 {
   text-align: center;
   color: var(--text-color); /* Updated to use the text color variable */
   font-size: 2rem;
@@ -19,23 +20,20 @@
   margin-bottom: 20px;
 }
 
-.login-container h2 {
-  text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
-  color: var(--primary-color); /* Updated to use the primary color variable */
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 20px;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.login-container label {
+label {
   font-size: 14px;
   color: var(--text-color); /* Updated to use the text color variable */
   margin-bottom: 5px;
   font-weight: 500;
 }
 
-.login-container input {
+input,
+textarea {
   margin-bottom: 15px;
   padding: 10px 4px;
   border: 1px solid var(--primary-color); /* Updated to use the primary color variable */
@@ -45,12 +43,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.login-container input:focus {
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
   border-color: var(--accent-color); /* Updated to use the accent color variable */
   outline: none;
 }
 
-.login-container button {
+button {
   padding: 10px;
   background-color: var(--accent-color); /* Updated to use the accent color variable */
   color: #fff;
@@ -64,7 +68,7 @@
   transition: background-color 0.3s ease;
 }
 
-.login-container button:hover {
+button:hover {
   background-color: var(--primary-color); /* Updated to use the primary color variable */
 }
 
@@ -73,4 +77,16 @@
   font-size: 12px;
   margin-top: -10px;
   margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .question-form-container {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
 }
